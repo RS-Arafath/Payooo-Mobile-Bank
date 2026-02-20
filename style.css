@@ -1,0 +1,5 @@
+@import "tailwindcss";
+ :root {
+   --color-clifford: #da373d;
+   --color-gray:#777;
+ }
