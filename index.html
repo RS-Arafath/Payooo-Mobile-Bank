@@ -1,16 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html data-theme="">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ~~~~~~css link~~~~~~ -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
     <!-- ~~~~~~tailwind & daisyui cdn~~~~~~ -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- ~~~~~~daisyui theme cdn~~~~~~ -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
     <!-- ~~~~~~google fonts~~~~~~~ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +22,37 @@
     <!-- ~~~~~~font awsome cdn~~~~~~~ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
-    <title>Payooo Mobile Bank</title>
+    <!-- ~~~~~~font awsome cdn~~~~~~~ -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <style type="text/tailwindcss">
+      @theme {
+              --color-clifford: #da373d;
+            }
+          </style>
+    <title>Payoo | Login</title>
   </head>
 
-  <body>
-    <button class="btn">click me</button>
+  <body class="min-h-screen max-w-md bg-base-200 mx-auto">
+    <div class="logo w-[250px] mx-auto pt-32">
+      <img src="./images/Logo-full.png" alt="logo_img">
+    </div>
+
+    <!-- ~~~~~~~~~login form~~~~~~~~~ -->
+    <div class="login-form pt-8">
+      <div class="card mx-auto bg-white rounded-3xl w-full max-w-sm shrink-0 ">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label font-semibold text-base text-[#080808]">Mobile Number</label>
+            <input maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 text-[#777]" placeholder="enter your number" />
+            <br>
+            <label class="label font-semibold text-base text-[#080808]">4 Digit Pin</label>
+            <input maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 text-[#777]" placeholder="Enter 4 Digit Pin" />
+            <button class="btn btn-primary mt-4 rounded-full font-semibold text-xl ">Login</button>
+          </fieldset>
+        </div>
+      </div>
+    </div>
 
   </body>
 

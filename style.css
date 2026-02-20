@@ -1,5 +1,9 @@
 @import "tailwindcss";
+*{
+  font-family: "Outfit",sans-serif;
+}
  :root {
    --color-clifford: #da373d;
    --color-gray:#777;
  }
+
