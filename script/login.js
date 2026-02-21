@@ -11,7 +11,8 @@ document.getElementById('btn-login').addEventListener('click', function () {
   if (number == '01893176269' && PIN == '1234') {
     alert('Login Successfull')
     //destination after login
-    window.location.assign('/home.html')
+
+    window.location.assign('home.html');
   } else {
     alert('login faild');
     loginNumber.value = '';
