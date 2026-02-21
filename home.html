@@ -1,0 +1,108 @@
+<html data-theme="light">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ~~~~~~css link~~~~~~ -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ~~~~~~tailwind & daisyui cdn~~~~~~ -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- ~~~~~~daisyui theme cdn~~~~~~ -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <!-- ~~~~~~google fonts~~~~~~~ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- ~~~~~~font awsome cdn~~~~~~~ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+    <!-- ~~~~~~favicon icon~~~~~~~ -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!-- ~~~~~~~~~~~~custom style~~~~~~~~~~~~~~ -->
+    <!-- 
+    <style type="text/tailwindcss">
+      @theme {
+              --color-clifford: #da373d;
+            }
+          </style> -->
+    <title>Payoo | Home</title>
+  </head>
+
+  <body class="min-h-screen max-w-md bg-base-200 mx-auto">
+
+    <!-- ~~~~~~~~header~~~~~~~~~~  -->
+    <header class="border-b-2 border-gray-300">
+      <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
+        <!-- ~~~~~~~header left div~~~~~~~ -->
+        <div class="left  flex gap-1">
+          <div class="logo w-[60px]">
+            <img src="./images/logo.png" alt="logo">
+          </div>
+          <!-- ~~~~~~~~blance box~~~~~~~~ -->
+          <div class="blance-info">
+            <h2 class="text-2xl font-bold">$ <span id="blance">1200</span></h2>
+            <p class="text-neutral/50">Available Blance</p>
+          </div>
+
+        </div>
+        <!-- ~~~~~~~header right div~~~~~~~ -->
+        <div class="right">
+          <a href="index.html" class="btn btn-soft text-[14px] text-neutral/50"><i
+              class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>Log Out</a>
+        </div>
+      </section>
+    </header>
+
+    <!-- ~~~~~~hero section~~~~~~~ -->
+     <section class="w-11/12 mx-auto py-10 space-y-4">
+      <h2 class="text-3xl font-bold">Welcome to pay<span class="text-primary">oo</span></h2>
+      <p class="text-neutral/50 leading-6">Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
+
+      <div class="buttons grid grid-cols-3 gap-3">
+        <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+          <img src="./images/opt-1.png" alt="add_money">
+          <p class="">Add Money</p>
+        </button>
+
+        <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+          <img src="./images/opt-2.png" alt="cash_out">
+          <p class="">Cash Out</p>
+        </button>
+
+        <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+          <img src="./images/opt-3.png" alt="transfer_money">
+          <p class="">Send Money</p>
+        </button>
+
+        <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+          <img src="./images/opt-4.png" alt="get_bonus">
+          <p class="">Get Bonus</p>
+        </button>
+
+        <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+          <img src="./images/opt-5.png" alt="pay_bill">
+          <p class="">Pay Bill</p>
+        </button>
+        
+        <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+          <img src="./images/opt-6.png" alt="transactions">
+          <p class="">Transactions</p>
+        </button>
+
+      </div>
+     </section>
+
+
+
+
+
+    <script src=""></script>
+  </body>
+
+</html>

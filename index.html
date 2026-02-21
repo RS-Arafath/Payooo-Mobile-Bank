@@ -1,5 +1,4 @@
-<!doctype html>
-<html data-theme="">
+<html data-theme="light">
 
   <head>
     <meta charset="UTF-8" />
@@ -22,14 +21,16 @@
     <!-- ~~~~~~font awsome cdn~~~~~~~ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
-    <!-- ~~~~~~font awsome cdn~~~~~~~ -->
+    <!-- ~~~~~~favicon icon~~~~~~~ -->
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 
+    <!-- ~~~~~~~~~~~~custom style~~~~~~~~~~~~~~ -->
+    <!-- 
     <style type="text/tailwindcss">
       @theme {
               --color-clifford: #da373d;
             }
-          </style>
+          </style> -->
     <title>Payoo | Login</title>
   </head>
 
@@ -40,20 +41,23 @@
 
     <!-- ~~~~~~~~~login form~~~~~~~~~ -->
     <div class="login-form pt-8">
-      <div class="card mx-auto bg-white rounded-3xl w-full max-w-sm shrink-0 ">
+      <div class="card mx-auto bg-base-100 rounded-3xl w-full max-w-sm shrink-0 ">
         <div class="card-body">
           <fieldset class="fieldset">
-            <label class="label font-semibold text-base text-[#080808]">Mobile Number</label>
-            <input maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 text-[#777]" placeholder="enter your number" />
+            <label class="label font-semibold text-base text-neutral">Mobile Number</label>
+            <input id="login-number" maxlength="11" value="01893176269" minlength="11" type="text"
+              class="input rounded-full bg-base-200 border-none p-6" placeholder="Enter your number" />
             <br>
-            <label class="label font-semibold text-base text-[#080808]">4 Digit Pin</label>
-            <input maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 text-[#777]" placeholder="Enter 4 Digit Pin" />
-            <button class="btn btn-primary mt-4 rounded-full font-semibold text-xl ">Login</button>
+            <label class="label font-semibold text-base text-neutral">4 Digit Pin</label>
+            <input id="login-pin" value="1234" maxlength="4" minlength="4" type="password"
+              class="input rounded-full bg-base-200 border-none p-6" placeholder="Enter 4 Digit Pin" />
+            <button id="btn-login" class="btn btn-primary mt-4 rounded-full font-semibold text-xl ">Login</button>
           </fieldset>
         </div>
       </div>
     </div>
-
+    <!-- ~~~~~~~~~~js connection~~~~~~~~~~~~~ -->
+    <script src="script/login.js"></script>
   </body>
 
 </html>
