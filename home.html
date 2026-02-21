@@ -39,7 +39,7 @@
     <!-- ~~~~~~~~header~~~~~~~~~~  -->
     <section class="bg-base-100 rounded-3xl">
 
-      <header class="border-b-2 border-gray-300">
+      <header class="border-b-2 sticky top-0 z-50 bg-base-200 border-gray-300">
         <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
           <!-- ~~~~~~~header left div~~~~~~~ -->
           <div class="left  flex gap-1">
@@ -112,13 +112,13 @@
           <fieldset class="fieldset space-y-2">
 
             <label class="label font-semibold text-base text-[#08080870] ">Agent Number</label>
-            <input id="cashout-number" minlength="11" maxlength="11" type="tel"
+            <input id="agent-number" minlength="11" maxlength="11" type="tel"
               class="input w-full rounded-full bg-base-200 border-none p-6 text-[#080808]"
               placeholder="Enter 11 digit number" />
 
 
             <label class="label font-semibold text-base text-[#08080870] ">Amount</label>
-            <input id="cashout-amount" minlength="11" maxlength="11" type="tel"
+            <input id="cashout-amount" maxlength="7" type="tel"
               class="input w-full rounded-full bg-base-200 border-none p-6 text-[#080808]"
               placeholder="Enter amount to withdraw" />
 
@@ -128,19 +128,18 @@
               placeholder="Enter 4 digit pin number" />
 
 
-            <button id="btn-login" class="btn btn-primary mt-4 rounded-full font-semibold text-xl ">Withdraw
+            <button id="btn-cashout" class="btn btn-primary mt-4 rounded-full font-semibold text-xl ">Withdraw
               Money</button>
           </fieldset>
         </div>
       </div>
-
     </section>
 
 
 
 
-
-    <script src=""></script>
+    <!-- ~~~~~~~~~js link~~~~~~~ -->
+    <script src="script/cashout.js"></script>
   </body>
 
 </html>

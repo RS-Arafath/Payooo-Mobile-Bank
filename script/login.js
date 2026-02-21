@@ -16,7 +16,7 @@ document.getElementById('btn-login').addEventListener('click', function () {
   } else {
     alert('login faild');
     loginNumber.value = '';
-    loginPin.value = '';
+    PIN = '';
     return;
 
   }
