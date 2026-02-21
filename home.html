@@ -37,66 +37,104 @@
   <body class="min-h-screen max-w-md bg-base-200 mx-auto">
 
     <!-- ~~~~~~~~header~~~~~~~~~~  -->
-    <header class="border-b-2 border-gray-300">
-      <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
-        <!-- ~~~~~~~header left div~~~~~~~ -->
-        <div class="left  flex gap-1">
-          <div class="logo w-[60px]">
-            <img src="./images/logo.png" alt="logo">
-          </div>
-          <!-- ~~~~~~~~blance box~~~~~~~~ -->
-          <div class="blance-info">
-            <h2 class="text-2xl font-bold">$ <span id="blance">1200</span></h2>
-            <p class="text-neutral/50">Available Blance</p>
-          </div>
+    <section class="bg-base-100 rounded-3xl">
 
-        </div>
-        <!-- ~~~~~~~header right div~~~~~~~ -->
-        <div class="right">
-          <a href="index.html" class="btn btn-soft text-[14px] text-neutral/50"><i
-              class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>Log Out</a>
+      <header class="border-b-2 border-gray-300">
+        <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
+          <!-- ~~~~~~~header left div~~~~~~~ -->
+          <div class="left  flex gap-1">
+            <div class="logo w-[60px]">
+              <img src="./images/logo.png" alt="logo">
+            </div>
+            <!-- ~~~~~~~~blance box~~~~~~~~ -->
+            <div class="blance-info">
+              <h2 class="text-2xl font-bold">$ <span id="blance">1200</span></h2>
+              <p class="text-neutral/50">Available Blance</p>
+            </div>
+
+          </div>
+          <!-- ~~~~~~~header right div~~~~~~~ -->
+          <div class="right">
+            <a href="index.html" class="btn btn-soft text-[14px] text-neutral/50"><i
+                class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>Log Out</a>
+          </div>
+        </section>
+      </header>
+
+      <!-- ~~~~~~hero section~~~~~~~ -->
+      <section class="w-11/12 mx-auto py-10 space-y-4 l">
+        <h2 class="text-3xl font-bold">Welcome to pay<span class="text-primary">oo</span></h2>
+        <p class="text-neutral/50 leading-6">Enjoy easy and convenient financial services with us. Cashout charge is low
+          and</p>
+
+        <div class="buttons grid grid-cols-3 gap-3">
+          <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+            <img src="./images/opt-1.png" alt="add_money">
+            <p class="">Add Money</p>
+          </button>
+
+          <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+            <img src="./images/opt-2.png" alt="cash_out">
+            <p class="">Cash Out</p>
+          </button>
+
+          <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+            <img src="./images/opt-3.png" alt="transfer_money">
+            <p class="">Send Money</p>
+          </button>
+
+          <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+            <img src="./images/opt-4.png" alt="get_bonus">
+            <p class="">Get Bonus</p>
+          </button>
+
+          <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+            <img src="./images/opt-5.png" alt="pay_bill">
+            <p class="">Pay Bill</p>
+          </button>
+
+          <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+            <img src="./images/opt-6.png" alt="transactions">
+            <p class="">Transactions</p>
+          </button>
+
         </div>
       </section>
-    </header>
+    </section>
 
-    <!-- ~~~~~~hero section~~~~~~~ -->
-     <section class="w-11/12 mx-auto py-10 space-y-4">
-      <h2 class="text-3xl font-bold">Welcome to pay<span class="text-primary">oo</span></h2>
-      <p class="text-neutral/50 leading-6">Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
 
-      <div class="buttons grid grid-cols-3 gap-3">
-        <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
-          <img src="./images/opt-1.png" alt="add_money">
-          <p class="">Add Money</p>
-        </button>
+    <!-- ~~~~~~form~~~~~~~ -->
+    <section id="cashout" class="py-5 w-11/12 mx-auto">
+      <h2 class="text-xl font-bold mb-5">Cash Out</h2>
 
-        <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
-          <img src="./images/opt-2.png" alt="cash_out">
-          <p class="">Cash Out</p>
-        </button>
+      <div class="card mx-auto bg-base-100 rounded-3xl w-full">
+        <div class="card-body">
+          <fieldset class="fieldset space-y-2">
 
-        <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
-          <img src="./images/opt-3.png" alt="transfer_money">
-          <p class="">Send Money</p>
-        </button>
+            <label class="label font-semibold text-base text-[#08080870] ">Agent Number</label>
+            <input id="cashout-number" minlength="11" maxlength="11" type="tel"
+              class="input w-full rounded-full bg-base-200 border-none p-6 text-[#080808]"
+              placeholder="Enter 11 digit number" />
 
-        <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
-          <img src="./images/opt-4.png" alt="get_bonus">
-          <p class="">Get Bonus</p>
-        </button>
 
-        <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
-          <img src="./images/opt-5.png" alt="pay_bill">
-          <p class="">Pay Bill</p>
-        </button>
-        
-        <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
-          <img src="./images/opt-6.png" alt="transactions">
-          <p class="">Transactions</p>
-        </button>
+            <label class="label font-semibold text-base text-[#08080870] ">Amount</label>
+            <input id="cashout-amount" minlength="11" maxlength="11" type="tel"
+              class="input w-full rounded-full bg-base-200 border-none p-6 text-[#080808]"
+              placeholder="Enter amount to withdraw" />
 
+            <label class="label font-semibold text-base text-[#08080870] ">Pin Number</label>
+            <input id="cashout-pin" minlength="6" maxlength="6" type="password"
+              class="input w-full rounded-full bg-base-200 border-none p-6 text-[#080808]"
+              placeholder="Enter 4 digit pin number" />
+
+
+            <button id="btn-login" class="btn btn-primary mt-4 rounded-full font-semibold text-xl ">Withdraw
+              Money</button>
+          </fieldset>
+        </div>
       </div>
-     </section>
+
+    </section>
 
 
 
