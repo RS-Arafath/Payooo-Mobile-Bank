@@ -26,6 +26,8 @@ document.getElementById('btn-cashout').addEventListener('click', function () {
     alert('Invalid Agent Number,Entere correct Number');
     agentNumber.value = '';
     return;
+  } else {
+    agentNumber.value = '';
   }
 
   //4)calculate new blance
@@ -34,6 +36,8 @@ document.getElementById('btn-cashout').addEventListener('click', function () {
     alert('Invalid Amount');
     cashoutAmount.value = '';
     return;
+  } else {
+    cashoutAmount.value = '';
   }
 
   //5) varify pin
@@ -43,7 +47,7 @@ document.getElementById('btn-cashout').addEventListener('click', function () {
     //true:: show an alert> set blance
     alert('CashOut Successfull');
     totalBlance.innerText = currentBlance;
-  
+   cashOutPIn.value = '';
     return;
   
     
