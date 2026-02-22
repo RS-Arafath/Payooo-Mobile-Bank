@@ -17,24 +17,24 @@ document.getElementById('btn-cashout').addEventListener('click', function () {
   /*  ~~~~~validation check~~~~~~~~~ */
 
   //current blance
-  const currentAmount=getBlance()
-  
+  const currentAmount = getBlance();
+
   //calculate current blance
-  const currentBlance = currentAmount- Number(cashoutMoney);
+  const currentBlance = currentAmount - Number(cashoutMoney);
 
   /*  ~~~~~ amount validation check~~~~~~~~ */
-  if (currentBlance < 0 || cashoutMoney < 0) {
+  if (isNaN(cashoutMoney) || currentBlance < 0 || cashoutMoney < 0) {
     alert('Invalid Amount');
     return;
-  } else {
   }
+
   //5) varify pin
   const cashOutPIn = document.getElementById('cashout-pin');
   const pin = cashOutPIn.value;
   if (pin === '1111') {
     //true:: show an alert> set blance
     alert('CashOut Successfull');
-    document.getElementById('blance').innerText = currentBlance;
+    setBlance(currentBlance);
     cashOutPIn.value = '';
     return;
   } else {
