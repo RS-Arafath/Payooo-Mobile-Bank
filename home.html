@@ -65,7 +65,8 @@
             <p class="">Add Money</p>
           </button>
 
-          <button onclick="showOnly('cashout')" id="cashout-btn" class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+          <button onclick="showOnly('cashout')" id="cashout-btn"
+            class="btn btn-outline btn-primary  flex-col h-full py-5 ">
             <img src="./images/opt-2.png" alt="cash_out">
             <p class="">Cash Out</p>
           </button>
@@ -85,7 +86,7 @@
             <p class="">Pay Bill</p>
           </button>
 
-          <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+          <button onclick="showOnly('history')" class="btn btn-outline btn-primary  flex-col h-full py-5 ">
             <img src="./images/opt-6.png" alt="transactions">
             <p class="">Transactions</p>
           </button>
@@ -106,9 +107,9 @@
             <select id="add-money-bank" class="select text-[#08080870] w-full rounded-full bg-base-200 border-none">
               <option disabled selected>Select a bank</option>
               <option value="DBBL">DBBL</option>
-              <option value="IBBL">IBBL</option>
-              <option value="City Bank">City Bank</option>
-              <option value="Islamic Bank">Islamic Bank</option>
+              <option value="UBS (Switzerland)">UBS (Switzerland)</option>
+              <option value="JPMorgan Chase (USA)">JPMorgan Chase (USA)</option>
+              <option value="Citibank (USA)">Citibank (USA)</option>
             </select>
 
 
@@ -156,16 +157,26 @@
               placeholder="Enter amount to withdraw" />
 
             <label class="label font-semibold text-base text-[#08080870] ">Pin Number</label>
-            <input id="cashout-pin" minlength="6" maxlength="4" type="password"
+            <input id="cashout-pin" minlength="4" maxlength="4" type="password"
               class="input w-full rounded-full bg-base-200 border-none p-6 text-[#080808]"
-              placeholder="Enter 4 digit pin number" />
-
+              placeholder="Enter 4 digit pin number (1234)" />
 
             <button id="btn-cashout" class="btn btn-primary mt-4 rounded-full font-semibold text-xl ">Withdraw
               Money</button>
           </fieldset>
         </div>
       </div>
+    </section>
+
+    <!-- ~~~~~~~~~~transaction histiry~~~~~~~~~ -->
+    <section id="history" class=" hidden py-5 w-11/12 mx-auto">
+      <h2 class="text-xl font-bold mb-5">Transaction History</h2>
+      <div id="history-container" class="space-y-2">
+
+
+      </div>
+      </div>
+
     </section>
 
 

@@ -32,7 +32,7 @@ document.getElementById('btn-add-money').addEventListener('click', function () {
     alert('Invalid Amount');
     return;
   }
-  
+
   //7) pin validation check
   const addMoneyPIn = document.getElementById('add-money-pin');
   const pin = addMoneyPIn.value;
@@ -41,7 +41,25 @@ document.getElementById('btn-add-money').addEventListener('click', function () {
     alert(`Add Money Successfull From ${bankAccount} at ${new Date()}`);
     setBlance(currentBlance);
     addMoneyPIn.value = '';
-    return;
+    /*   ~~~~~~~adding transaction history~~~~~~~~~ */
+    // 1) get history-container
+    const history = document.getElementById('history-container');
+
+    //2)creat a div
+    const newHistory = document.createElement('div');
+
+    //3) inner html in new div
+    newHistory.innerHTML = `
+     <div class="transaction-card bg-base-100 p-5 rounded-xl leading-6">
+     Add Money <span class="font-semibold">$${addMoneyAmount}
+      </span> Successfull From ${bankAccount};
+     <span class="font-semibold">
+      ACC-No ${accNo} </span>, 
+     at ${new Date()}
+     </div>
+     `;
+    //4) new div append in history container
+    history.appendChild(newHistory);
   } else {
     //false:: show an error alert > return
     alert('Invalid Pin');
