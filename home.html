@@ -29,7 +29,7 @@
 
   <body class="min-h-screen max-w-md bg-base-200 mx-auto">
 
-    <!-- ~~~~~~~~header~~~~~~~~~~  -->
+    <!-- ~~~~~~~~header and hero~~~~~~~~~~  -->
     <section class="bg-base-100 rounded-3xl">
       <header class="border-b-2 sticky top-0 z-50 bg-base-200 border-gray-300">
         <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
@@ -40,14 +40,14 @@
             </div>
             <!-- ~~~~~~~~blance box~~~~~~~~ -->
             <div class="blance-info">
-              <h2 class="text-2xl font-bold">$ <span id="blance">1200</span></h2>
-              <p class="text-neutral/50">Available Blance</p>
+              <h2 class="text-base font-bold">$ <span id="blance" class="text-green-600">1200</span></h2>
+              <p class="text-neutral/50 text-base">Available Blance</p>
             </div>
 
           </div>
           <!-- ~~~~~~~header right div~~~~~~~ -->
           <div class="right">
-            <a href="index.html" class="btn btn-soft text-[14px] text-neutral/50"><i
+            <a href="index.html" class="btn btn-outline  text-[14px] text-neutral/50"><i
                 class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>Log Out</a>
           </div>
         </section>
@@ -60,12 +60,12 @@
           and</p>
 
         <div class="buttons grid grid-cols-3 gap-3">
-          <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+          <button onclick="showOnly('add-money')" class="btn btn-outline btn-primary  flex-col h-full py-5 ">
             <img src="./images/opt-1.png" alt="add_money">
             <p class="">Add Money</p>
           </button>
 
-          <button class="btn btn-outline btn-primary  flex-col h-full py-5 ">
+          <button onclick="showOnly('cashout')" id="cashout-btn" class="btn btn-outline btn-primary  flex-col h-full py-5 ">
             <img src="./images/opt-2.png" alt="cash_out">
             <p class="">Cash Out</p>
           </button>
@@ -93,8 +93,8 @@
       </section>
     </section>
 
-    <!-- ~~~~~~~add money~~~~~~~~~~ -->
-    <section id="add-money" class="py-5 w-11/12 mx-auto">
+    <!-- ~~~~~~~add money input~~~~~~~~ -->
+    <section id="add-money" class="hidden py-5 w-11/12 mx-auto">
       <h2 class="text-xl font-bold mb-5">Add Money</h2>
 
       <div class="card mx-auto bg-base-100 rounded-3xl w-full">
@@ -126,7 +126,7 @@
             <label class="label font-semibold text-base text-[#08080870] ">Pin Number</label>
             <input id="add-money-pin" minlength="6" maxlength="4" type="password"
               class="input w-full rounded-full bg-base-200 border-none text-[#080808]"
-              placeholder="Enter 4 digit pin number" />
+              placeholder="Enter 4 digit pin number (1234)" />
 
 
             <button id="btn-add-money" class="btn btn-primary mt-4 rounded-full font-semibold text-xl ">Add
@@ -136,7 +136,7 @@
       </div>
     </section>
 
-    <!-- ~~~~~~cashout form~~~~~~~ -->
+    <!-- ~~~~~~cashout input~~~~~~~ -->
     <section id="cashout" class=" hidden py-5 w-11/12 mx-auto">
       <h2 class="text-xl font-bold mb-5">Cash Out</h2>
 

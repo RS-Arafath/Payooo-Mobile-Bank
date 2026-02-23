@@ -23,7 +23,12 @@ document.getElementById('btn-cashout').addEventListener('click', function () {
   const currentBlance = currentAmount - Number(cashoutMoney);
 
   /*  ~~~~~ amount validation check~~~~~~~~ */
-  if (isNaN(cashoutMoney) || currentBlance < 0 || cashoutMoney < 0) {
+  if (
+    cashoutMoney === '' ||
+    isNaN(cashoutMoney) ||
+    currentBlance < 0 ||
+    cashoutMoney < 0
+  ) {
     alert('Invalid Amount');
     return;
   }
@@ -33,7 +38,7 @@ document.getElementById('btn-cashout').addEventListener('click', function () {
   const pin = cashOutPIn.value;
   if (pin === '1111') {
     //true:: show an alert> set blance
-    alert('CashOut Successfull');
+   alert(`Add Money Successfull From ${cashOutNumber} at ${new Date()}`);
     setBlance(currentBlance);
     cashOutPIn.value = '';
     return;

@@ -18,10 +18,17 @@ function setBlance(value) {
   blanceElement.innerText = value;
   
 }
+//macine id> hide all >show id
+function showOnly(id) {
+ 
+  const addMoney = document.getElementById('add-money');
+  const cashOut = document.getElementById('cashout');
+  // firstly all hide
+  addMoney.classList.add('hidden');
+  cashOut.classList.add('hidden');
 
-// function empty(id) {
-//   const doEmpty = document.getElementById(id);
-//   const empty = doEmpty.value;
-//   return empty;
+  //match id show
+  const selected = document.getElementById(id);
+  selected.classList.remove('hidden')
 
-// }
+}
